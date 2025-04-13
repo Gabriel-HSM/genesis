@@ -1,2 +1,97 @@
 @charset "utf-8";
 
+body {
+    background: linear-gradient(to bottom, #369AC5, #1B1E23);
+    background-repeat: no-repeat; /* Evita repetição do fundo */
+    background-size: cover; /* Faz o fundo cobrir toda a tela */
+    min-height: 150vh; /* Aumenta a altura mínima para 150% da altura da viewport */
+    
+}
+
+nav > ul{
+    display: flex;
+    list-style: none;
+}
+
+nav > ul > li{
+    margin: 0 20px;
+    font-size: 3vh;
+    color: white;
+}
+
+nav > ul li:last-child {
+    margin-left: auto; /* Empurra o último item para o lado oposto */
+}
+
+#main{
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 6vh;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+    margin-top: 50px;
+    perspective: 1000px;
+}
+
+.card {
+    width: 150px;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card.esquerdo {
+    transform: rotateY(25deg);
+}
+
+.card.centro {
+    transform: rotateY(0deg);
+}
+
+.card.direito {
+        transform: rotateY(-25deg);
+}
+
+.titulosecao{
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 3vh;
+}
+
+.secaodois{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento uniforme entre os itens */
+}
+
+
+.photo{
+    background-color: white;
+    border-radius: 10px;
+    width: 300px;
+    height: 150px;
+  
+}
+
+.containersobremim{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+}
+
+.quadrad{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 10px;
+}
