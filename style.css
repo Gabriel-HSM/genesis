@@ -38,7 +38,7 @@ nav > ul li:last-child {
     color: white;
     text-align: center;
     margin-top: 50px;
-    font-size: 6vh;
+    font-size: 3rem;
 }
 
 .container1{
@@ -51,7 +51,7 @@ nav > ul li:last-child {
 }
 
 .card {
-    min-width: 20%;
+    min-width: 110px;
     height: 40vh;
     background-color: white;
     border-radius: 10px;
