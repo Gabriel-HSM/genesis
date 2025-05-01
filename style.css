@@ -1,36 +1,46 @@
 @charset "utf-8";
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background: linear-gradient(to bottom, #369AC5, #1B1E23);
     background-repeat: no-repeat; /* Evita repetição do fundo */
-    background-size: cover; /* Faz o fundo cobrir toda a tela */
-    min-height: 150vh; /* Aumenta a altura mínima para 150% da altura da viewport */
-    
+    min-height: 100vh; /* Garante que o fundo cubra toda a altura da tela */
+    color: white; /* Define a cor do texto padrão */
+}
+
+p{
+    margin: 1rem 0;
 }
 
 nav > ul{
     display: flex;
     list-style: none;
+    padding: 1rem;
+    gap: 0.5rem;
 }
 
 nav > ul > li{
     margin: 0 20px;
     font-size: 3vh;
-    color: white;
 }
 
 nav > ul li:last-child {
     margin-left: auto; /* Empurra o último item para o lado oposto */
 }
 
-#main{
+#h1main{
     color: white;
     text-align: center;
     margin-top: 50px;
     font-size: 6vh;
 }
 
-.container{
+.container1{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,12 +50,24 @@ nav > ul li:last-child {
 }
 
 .card {
-    width: 150px;
-    height: 200px;
+    width: 15vw;
+    height: 40vh;
     background-color: white;
     border-radius: 10px;
     transition: transform 0.5s ease;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 878px) {
+    .card {
+        width: 20vw;
+        height: 27vh;
+        background-color: white;
+        border-radius: 10px;
+        transition: transform 0.5s ease;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
 }
 
 .card.esquerdo {
@@ -60,38 +82,142 @@ nav > ul li:last-child {
         transform: rotateY(-25deg);
 }
 
+
 .titulosecao{
     color: white;
     text-align: center;
-    margin-top: 50px;
-    font-size: 3vh;
+    margin: 50px;
+    font-size: 5vh;
 }
 
-.secaodois{
+.container2{ /* Foto e parágrafo*/
     margin-top: 80px;
     display: flex;
     justify-content: center;
     gap: 20px; /* Espaçamento uniforme entre os itens */
 }
 
-
 .photo{
     background-color: white;
-    border-radius: 10px;
-    width: 300px;
-    height: 150px;
+    border-radius: 40px;
+    width: 30vw;
+    height: 35vh;
   
 }
 
-.containersobremim{
+@media (max-width: 878px) {
+    .photo{
+        background-color: white;
+        border-radius: 30px;
+        width: 50vh;
+        height: 25vh;
+      
+    }
+}
+
+.container3{ /* Quadrados embaixo da foto*/
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 9vw;
     margin-top: 150px;
 }
 
 .quadrad{
-    width: 150px;
-    height: 150px;
+    width: 15vw;
+    height: 35vh;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.meio{
+    margin-top: 50px;
+}
+
+@media (max-width: 878px) {
+    .quadrad{
+        width: 20vw;
+        height: 25vh;
+        background-color: white;
+        border-radius: 25px;
+    }
+
+    .container3{ /* Quadrados embaixo da foto*/
+        display: flex;
+        justify-content: center;
+        gap: 10vw;
+        margin-top: 150px;
+    }
+}
+
+.container4{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10vw;
+}
+.circulo{
+    width: 10vw;
+    height: 10vw;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 10vw;
+}
+.container5{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20vw;
+}
+.container5 > p{
+    margin-left: 10vw;
+}
+
+.photo2{
+    background-color: white;
+    border-radius: 40px;
+    width: 30vw;
+    height: 30vh;
+}
+
+@media (max-width: 878px) {
+    .circulo{
+        width: 15vw;
+        height: 15vw;
+        background-color: white;
+        border-radius: 50%;
+        margin-left: 10vw;
+    }
+    section > p{
+        margin-top: 50px;
+        margin-left: 70px;
+    }
+
+    .photo2{
+        margin: 50px 50px 0 0;
+        background-color: white;
+        border-radius: 40px;
+        width: 45vw;
+        height: 30vh;
+    }
+}
+
+
+.ultimocontainer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tecnologia-item {
+    display: flex;
+    align-items: center;  /* Alinha verticalmente o quadrado e o texto */
+    gap: 10px;  /* Espaço entre o quadrado e o parágrafo */
+}   
+
+ .square{
+    height: 10vh;
+    width: 10vw;
     background-color: white;
     border-radius: 10px;
-}
+    margin: 10px;
+ }
