@@ -11,7 +11,7 @@ body {
     background-repeat: no-repeat; /* Evita repetição do fundo */
     min-height: 100vh; /* Garante que o fundo cubra toda a altura da tela */
     min-height: 100vh;
-    min-height: 100vw;
+    width: 100%;
     color: white; /* Define a cor do texto padrão */
 }
 
