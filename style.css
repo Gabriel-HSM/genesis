@@ -10,6 +10,8 @@ body {
     background: linear-gradient(to bottom, #369AC5, #1B1E23);
     background-repeat: no-repeat; /* Evita repetição do fundo */
     min-height: 100vh; /* Garante que o fundo cubra toda a altura da tela */
+    min-height: 100vh;
+    min-height: 100vw;
     color: white; /* Define a cor do texto padrão */
 }
 
@@ -25,8 +27,7 @@ nav > ul{
 }
 
 nav > ul > li{
-    margin: 0 20px;
-    font-size: 3vh;
+    font-size: 1.2rem;
 }
 
 nav > ul li:last-child {
@@ -44,7 +45,7 @@ nav > ul li:last-child {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3vh;
+    gap: 1rem;
     margin-top: 50px;
     perspective: 1000px;
 }
