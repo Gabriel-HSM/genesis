@@ -38,6 +38,7 @@ nav > ul li:last-child {
     color: white;
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 00px;
     font-size: 3rem;
 }
 
@@ -52,12 +53,13 @@ nav > ul li:last-child {
 
 .card {
     min-width: 110px;
-    height: 40vh;
+    height: 200px;
     background-color: white;
     border-radius: 10px;
     transition: transform 0.5s ease;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
+
 
 /* Ajustes para telas menores */
 @media (max-width: 878px) {
@@ -70,6 +72,7 @@ nav > ul li:last-child {
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     }
 }
+
 
 .card.esquerdo {
     transform: rotateY(25deg);
@@ -88,10 +91,14 @@ nav > ul li:last-child {
     color: white;
     text-align: center;
     margin: 50px;
+    margin-top: 200px;
     font-size: 5vh;
 }
 
 .container2{ /* Foto e parágrafo*/
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
     margin-top: 80px;
     display: flex;
     justify-content: center;
@@ -104,6 +111,12 @@ nav > ul li:last-child {
     width: 30vw;
     height: 35vh;
   
+}
+
+.sobremimp{
+    justify-content: center;
+    width: 40rem;
+    font-size: 1.3rem;
 }
 
 @media (max-width: 878px) {
