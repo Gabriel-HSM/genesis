@@ -121,27 +121,7 @@ nav > ul li:last-child {
     border-radius: 30px;
 }
 
-.meio{
-    margin-top: 50px;
-}
-
-@media (max-width: 878px) {
-    .quadrad{
-        width: 20vw;
-        height: 25vh;
-        background-color: white;
-        border-radius: 25px;
-    }
-
-    .container3{ /* Quadrados embaixo da foto*/
-        display: flex;
-        justify-content: center;
-        gap: 10vw;
-        margin-top: 150px;
-    }
-}
-
-.container4{
+.container4{ /* experiências */
     display: flex;
     justify-content: flex-start;
     gap: 10vw;
@@ -153,13 +133,23 @@ nav > ul li:last-child {
     border-radius: 50%;
     margin-left: 10vw;
 }
+
+.txtpbeta{
+    width: 20rem;
+    margin: 2rem 0px 5rem 8rem;
+}
 .container5{
     display: flex;
     justify-content: flex-start;
-    gap: 20vw;
+    gap: 10vw;
 }
 .container5 > p{
     margin-left: 10vw;
+}
+
+.txthiper{
+    width: 20rem;
+    margin: 2rem 0px 5rem 8rem;
 }
 
 .photo2{
