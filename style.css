@@ -46,7 +46,6 @@ nav > ul li:last-child {
     color: white;
     text-align: center;
     margin: 50px;
-    margin-top: 200px;
     font-size: 5vh;
 }
 
@@ -141,7 +140,7 @@ nav > ul li:last-child {
     justify-content: flex-start;
     gap: 10vw;
 }
-.circulo{ /*imagems dos empregos*/
+.circulofoto{ /*imagems dos empregos*/
     width: 10vw;
     height: 10vw;
     background-color: white;
