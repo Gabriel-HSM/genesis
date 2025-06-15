@@ -131,8 +131,9 @@ nav > ul li:last-child {
 
 /******************************** EXPERIÊNCIAS  ************************************************/
 
-.testee{
+.testeA{
    padding: 1px;
+   background-color: rgb(1, 113, 141);
 
 }
 .containerexperiencias{ /* experiências */
@@ -150,7 +151,7 @@ nav > ul li:last-child {
 
 .txtexp{
     width: 20rem;
-    margin: 2rem 0px 5rem 8rem;
+    margin: 2rem 0px 5rem 6rem;
 }
 
 /************************************************************************************************/
